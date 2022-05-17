@@ -13,7 +13,7 @@ public class IMC {
 		return peso/(altura * altura);
 	}
 	
-	public String diagnostico() {
+	public void diagnostico() {
 		
 		double IMC = calcIMC();
 		String result = "";
@@ -28,22 +28,22 @@ public class IMC {
 			result = "Baixo peso";
 		}
 		else if (IMC < 24.99) {
-			result = "Baixo peso";
+			result = "Peso normal";
 		}
 		else if (IMC < 29.99) {
-			result = "Baixo peso";
+			result = "Sobrepeso";
 		}
 		else if (IMC < 34.99) {
-			result = "Baixo peso";
+			result = "Obesidade grau I";
 		}
 		else if (IMC < 39.99) {
-			result = "Baixo peso";
+			result = "Obesidade grau II";
 		}
 		else if (IMC > 40) {
-			result = "Baixo peso";
+			result = "Obesidade grau III (obesidade mórbida)";
 		}
-		
-		return result;
+		System.out.println("Seu IMC = " + IMC);
+		System.out.println(result);
 	}
 
 	
